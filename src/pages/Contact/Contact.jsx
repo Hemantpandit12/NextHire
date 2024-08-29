@@ -6,7 +6,7 @@ import CompLoad from '../Extra/CompLoad';
 const ContactUs = () => {
 
   const handleOnClick = () => {
-    window.open('https://github.com/raviteli45/Amazon');
+    window.open('https://github.com/Hemantpandit12/NextHire');
   }
   return (
     <><CompLoad /><div className="contact">
