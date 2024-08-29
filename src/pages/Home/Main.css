@@ -1,0 +1,9 @@
+.Main-container
+{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #666;
+    color: white !important;
+}

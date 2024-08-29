@@ -1,0 +1,9 @@
+.Footer-container
+{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    color: white !important;
+}

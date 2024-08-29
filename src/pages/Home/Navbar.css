@@ -1,0 +1,139 @@
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(10px) ;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    border: solid .5px white;
+
+  }
+  .link::before
+  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transition: all 0.5s ease;
+    bottom: -5px;
+    left: 0;
+    box-shadow:0 0 20px rgba(255, 255, 255, 0.8), 
+    0 0 50px rgba(255, 255, 255, 0.3);
+  }
+  .link:hover::before{
+    transform: scaleX(1);
+  }
+  .nav-links 
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .link {
+    color: #FFFF;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .link:hover {
+    color: #66d9ef;
+  }
+  
+  .link:active {
+    color: #ffff;
+  }
+  .RA{
+    color: #fff;
+    font-size: 27px;
+    margin-right: 71%;
+  }
+  .RA:hover {
+    color: #66d9ef;
+  }
+  .navbar-logo{
+    color: #fff;
+    margin-left: .5rem;
+  }
+  .navbar-logo:hover {
+    color: #66d9ef;
+    
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      align-items: flex-start;
+      overflow-y: hidden;
+    }
+    .nav-links {
+      font-size: small;
+      flex-direction: row;
+      padding: 0.5rem;
+      gap: 10px;
+      
+    }
+    .link {
+      margin-left: -20%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .RA {
+      margin-right: 0;
+      font-size: 20px;
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0.5rem;
+    }
+    .link {
+      font-size: 16px;
+    }
+    .RA {
+      font-size: 18px;
+    }
+  }
+
+  .navbar li {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navbar li:hover {
+    transform: scale(1.05);
+  }
+  
+  .navbar::before
+  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transition: all 0.5s ease;
+    bottom: 0;
+    left: 0;
+    box-shadow:0 0 20px rgba(255, 255, 255, 0.8), 
+    0 0 50px rgba(255, 255, 255, 0.3);
+  }
+  .navbar:hover::before{
+    transform: scaleX(1);
+  }

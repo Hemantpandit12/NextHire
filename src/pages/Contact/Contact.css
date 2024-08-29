@@ -1,0 +1,34 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: mistyrose;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+  }
+  .Android
+  {
+    color: #333;
+    margin-top: -10%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .Android:hover
+  {
+    transform: scale(1.1);
+    color : black;
+  }
+  

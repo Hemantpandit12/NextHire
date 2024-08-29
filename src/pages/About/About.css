@@ -1,0 +1,25 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: thistle;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: rgb(209, 115, 209);
+  }
+
+  .Amazon {
+    margin-top: -10%;
+    margin-bottom: 2%;
+    color : #333
+  }
+  
