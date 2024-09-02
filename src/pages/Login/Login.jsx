@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 import { FaUserCircle } from "react-icons/fa";
 function Login()
@@ -30,7 +31,10 @@ function Login()
       <span class="span">Forgot password?</span>
     </div>
     <button class="button-submit">Sign In</button>
-    <p class="p">Don't have an account? <span class="span">Sign Up</span>
+    <p class="p">Don't have an account? 
+            <Link to="/SignUp" className="span">
+            Sign Up
+            </Link>
     </p>
     </form>
     </div>

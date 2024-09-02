@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Register.css';
 import {FaUserEdit } from "react-icons/fa";
 function Register()
@@ -6,7 +7,7 @@ function Register()
     return (
     <div class="container">
     <form class="form">
-    <div className='profile'><FaUserEdit size={100}/></div>
+    <div className='profile'><FaUserEdit size={70}/></div>
     <div class="flex-column">
       <label>Full Name </label></div>
       <div class="inputForm">
@@ -36,7 +37,10 @@ function Register()
       </div>
     
     <button class="button-submit">Register</button>
-    <p class="p">Already have an account? <span class="span">Login</span>
+    <p class="p">Already have an account?
+           <Link to="/Login" className="span">
+           Login
+          </Link>
     </p>
     </form>
     </div>

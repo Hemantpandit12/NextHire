@@ -60,14 +60,14 @@
   .RA{
     color: #fff;
     font-size: 27px;
-    margin-right: 71%;
+    margin-right: 65%;
   }
   .RA:hover {
     color: #66d9ef;
   }
   .navbar-logo{
     color: #fff;
-    margin-left: .5rem;
+    margin-left: 1rem;
   }
   .navbar-logo:hover {
     color: #66d9ef;
@@ -93,9 +93,9 @@
       margin-bottom: 10px;
     }
     .RA {
-      margin-right: 0;
+      margin: auto;
       font-size: 20px;
-      display: none;
+      
     }
   }
   
@@ -105,9 +105,12 @@
     }
     .link {
       font-size: 16px;
+      margin: auto;
     }
     .RA {
-      font-size: 18px;
+      font-size: 30px;
+      margin: auto;
+
     }
   }
 
