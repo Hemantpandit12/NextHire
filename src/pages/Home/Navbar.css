@@ -51,7 +51,7 @@
   }
   
   .link:hover {
-    color: #66d9ef;
+    color: #FF9100;
   }
   
   .link:active {
@@ -63,14 +63,14 @@
     margin-right: 65%;
   }
   .RA:hover {
-    color: #66d9ef;
+    color: #FF9100;
   }
   .navbar-logo{
     color: #fff;
     margin-left: 1rem;
   }
   .navbar-logo:hover {
-    color: #66d9ef;
+    color: #FF9100;
     
   }
 
