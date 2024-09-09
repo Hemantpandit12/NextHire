@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #1E1E1E;
+    background-color: black;
     color: rgba(255, 255, 255, 0.741);
     padding-bottom: 2rem;
 }
@@ -39,6 +39,7 @@
   .IconT
   {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 1rem;
   }
   
@@ -76,6 +77,47 @@
   
   .Footer-Link li:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 480px) 
+  {
+    .Footer-nav-links
+    {
+      margin-left: 3rem;
+    }
+  }
+
+  @media (max-width: 768px) 
+  {
+    .Footer-nav-links
+    {
+        margin-left: 15rem;
+    }
+    .FLink
+    {
+      font-size: 12px;
+      margin-right: 15px;
+    }
+    .Next
+    {
+      font-size: 15px;
+      padding-top: auto;
+
+    }
+    .Footer-icon
+    {
+      margin-left: 1.5rem; 
+      height: 40px;  
+    }
+    .Footer-text
+    {
+      font-size: 15px;
+    }
+    .IconT
+    {
+      margin-top: 0;
+    }
+    
   }
   
  

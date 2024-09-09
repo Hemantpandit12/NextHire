@@ -1,11 +1,8 @@
 import React from 'react'
 import './Main.css';
-import Card from './Card';
-
 function Main() {
   return (
     <div className='Main-container'>
-          <Card />
         <div className="Main2">
           <div className="Main-Text">
             <h2>Welcome to <font color="#FF9100">NextHire</font></h2>

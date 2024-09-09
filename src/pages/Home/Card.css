@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   
+
+  .ParentDiv
+  {
+    display: grid;
+    place-items: center;
+  }
+
   .glass-card {
     background: rgb(255,157,0);
     background: linear-gradient(176deg, rgba(255,157,0,1) 17%, rgba(183,140,93,1) 50%, rgba(69,133,240,1) 97%);
-    padding: 24px; /* Padding around card */
-    max-width: 600px; /* Maximum width of the card */
+    padding: 30px; /* Padding around card */
+    max-width: 1000px; /* Maximum width of the card */
     height: auto; 
     width: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
     width: 100%; /* Full width */
     border-radius: 50px; /* Rounded corners */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
     color: white; /* Text color */
-    margin-right: auto;
-    margin-left: 7rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 5rem;
   }
   
   .card-columns {
     display: grid; /* Grid display */
     grid-template-columns: repeat(1, 1fr); /* Single column layout by default */
     gap: 60px; /* Gap between columns */
-    margin: 0 40px;
+    margin: 0 30px;
+    margin-bottom: 30px;
     overflow: hidden;
     text-wrap: wrap;
     text-align: center;
@@ -34,7 +40,7 @@
   
   @media (min-width: 768px) {
     .card-columns {
-      grid-template-columns: repeat(2, 1fr); /* Three columns layout for medium screens and up */
+      grid-template-columns: repeat(3, 1fr); /* Three columns layout for medium screens and up */
     }
   }
   
@@ -72,10 +78,13 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: white;
     margin-top: 10px;
+    height: 100px;
+    
+    
   }
   .CardImg
   {
-    margin: auto;
+   margin: auto;
   }
   .c1:hover, .c2:hover {
     background-color: white;
@@ -99,4 +108,21 @@
     transition: color 0.3s ease-in;
     padding: 10px;
     text-align: justify;
+  }
+  @media (max-width: 768px) 
+  {
+    .glass-card
+    {
+        padding: 5px;
+        gap: 10px;
+        transform: scale(.9);
+        margin-bottom: 15px;
+        margin-top: 15px;
+        
+    }
+    .c1, .c2, .c3
+    {
+      width: 20rem;
+    }
+    
   }

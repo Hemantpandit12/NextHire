@@ -3,7 +3,7 @@
 
 .Header-container
 {
-    height: 500px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +64,35 @@
     margin-top: 3rem;
   }
   
-  
+  @media (max-width: 480px) 
+  {
+    .line
+    {
+        display: none;
+    }
+    .logo
+    {
+        margin-left: 1rem;
+        
+    }
+
+  }
+  @media (max-width: 768px) 
+  {
+    .line
+    {
+        display: none;
+    }
+    .logo
+    {
+        margin-left: -7rem;
+        
+    }
+    .latter-container
+    {
+        padding-left: 3rem;
+    }
+  }
 
     
       
