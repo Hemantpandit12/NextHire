@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
-import { FaHireAHelper } from "react-icons/fa";
-
+//import { FaHireAHelper } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <FaHireAHelper className="navbar-logo" size={40} />
+      <RiNextjsLine className="navbar-logo" size={50} />
       <p className='RA'>NextHire</p>
       <ul className="nav-links">
         <li>

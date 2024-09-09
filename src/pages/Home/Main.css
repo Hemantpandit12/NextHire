@@ -1,9 +1,49 @@
 .Main-container
 {
+
     height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #666;
-    color: white !important;
+    background-color: rgb(0, 0, 0);
+    
+}
+.Main2
+{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.Main-Text
+{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 3rem;
+}
+.Main-btn
+{
+    height : 3rem !important;
+    width: 10rem !important;
+    margin-left: 20rem;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+    border: 2px solid #FF9100;
+    background-color: black;
+    color: white;
+    margin-top: -5rem;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Mainp{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center
+}
+
+.Main-btn:hover
+{
+    background-color: #FF9100;
+    color: black;
 }

@@ -1,9 +1,81 @@
 .Footer-container
 {
-    height: 300px;
+    height: auto;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #222;
-    color: white !important;
+    background-color: #1E1E1E;
+    color: rgba(255, 255, 255, 0.741);
+    padding-bottom: 2rem;
 }
+  .Footer-line {
+    width: 95%; /* adjust width as needed */
+    height: 2px; /* adjust height as needed */
+    background-color: #ffffff79; /* adjust color as needed */
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+  .Text-container 
+  {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+  }
+  .Footer-icon
+  {
+    margin-left: 3rem;
+    padding-top: auto;
+    padding-bottom: 7px;
+  }
+  .Next
+  {
+    margin-left: .5rem; 
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    
+  }
+  .IconT
+  {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .Footer-nav-links
+  {
+    list-style: none;
+    margin-left: 62rem;
+    padding: 1rem;
+    display: flex; /* add this line */
+    flex-wrap: wrap; /* add this line */
+    justify-content: center; /* add this line */
+  }
+  
+  .FLink {
+    color: rgba(255, 255, 255, 0.741);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .FLink:hover {
+    color: #FF9100;
+  }
+  
+  .FLink:active {
+    color: #ffff;
+  }
+
+  .Footer-Link li {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .Footer-Link li:hover {
+    transform: scale(1.05);
+  }
+  
+ 

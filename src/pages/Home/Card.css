@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  .glass-card {
+    background: rgb(255,157,0);
+    background: linear-gradient(176deg, rgba(255,157,0,1) 17%, rgba(183,140,93,1) 50%, rgba(69,133,240,1) 97%);
+    padding: 24px; /* Padding around card */
+    max-width: 600px; /* Maximum width of the card */
+    height: auto; 
+    width: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%; /* Full width */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    color: white; /* Text color */
+    margin-right: auto;
+    margin-left: 7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .card-columns {
+    display: grid; /* Grid display */
+    grid-template-columns: repeat(1, 1fr); /* Single column layout by default */
+    gap: 60px; /* Gap between columns */
+    margin: 0 40px;
+    overflow: hidden;
+    text-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .card-columns {
+      grid-template-columns: repeat(2, 1fr); /* Three columns layout for medium screens and up */
+    }
+  }
+  
+  .card-column {
+    padding: 16px; /* Padding for each column */
+    transition: transform 0.3s ease-in-out; /* Transition effect for hover */
+    cursor: pointer;
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Font size for titles */
+    font-weight: 600; /* Semi-bold font weight */
+    margin-bottom: 8px; /* Margin bottom */
+  }
+  
+  .card-text {
+    font-size: 0.875rem; /* Small font size for descriptions */
+  }
+
+  .c1, .c2, .c3
+  {
+    margin-top: 2rem;
+    border-radius: 30px;
+    height: 300px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    transition: transform background-color 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Cimg
+  {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-top: 10px;
+  }
+  .CardImg
+  {
+    margin: auto;
+  }
+  .c1:hover, .c2:hover {
+    background-color: white;
+    transform: scale(1.01);
+    
+    h3 {
+      color: #FF9100;
+    }
+    p
+    {
+      color: black;
+    }
+  }
+
+  .Card-heading{
+    margin-top: 12px;
+    text-align: center;
+    transition: color 0.3s ease-in;
+  }
+  .card-text{
+    transition: color 0.3s ease-in;
+    padding: 10px;
+    text-align: justify;
+  }
