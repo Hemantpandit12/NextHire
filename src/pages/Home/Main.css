@@ -8,6 +8,7 @@
     background-color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
+    padding-top: 5rem;
 
     
 }
@@ -16,7 +17,6 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    margin-left: ;
     padding: 3rem;
 }
 .Main-Text
@@ -30,8 +30,8 @@
 }
 .Main-btn
 {
-    height : 3rem !important;
-    width: 10rem !important;
+    height : 3rem;
+    width: 10rem;
     border-radius: 50px;
     margin-bottom: 3rem;
     margin-left: 20rem;
@@ -41,6 +41,7 @@
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
     font-weight: bold;
+    margin-top: -3rem;
 }
 .Mainp{
     padding-top: 2rem;

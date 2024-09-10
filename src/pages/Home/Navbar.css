@@ -7,9 +7,10 @@
     align-items: center;
     padding-left: 1%;
     font-weight: bolder;
-    position: sticky;
     top: 0;
     left: 0;
+    position: fixed;
+    width: 100%;
     z-index: 1000; 
     border: solid .5px white;
 

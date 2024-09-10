@@ -91,7 +91,7 @@
   {
     .Footer-nav-links
     {
-        margin-left: 15rem;
+        margin-left: 13rem;
     }
     .FLink
     {
@@ -101,13 +101,17 @@
     .Next
     {
       font-size: 15px;
-      padding-top: auto;
-
+      position: relative;
+      top: 45px;
+      margin-left: 0;
     }
     .Footer-icon
     {
-      margin-left: 1.5rem; 
-      height: 40px;  
+      margin-left: 1rem; 
+      height: 35px;  
+
+      position: relative;
+      top: 50px;
     }
     .Footer-text
     {
