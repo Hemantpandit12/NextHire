@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-
+   
     
 }
 .Main2
@@ -71,3 +71,38 @@
     }
     
   }
+    /*Typing Effect*/
+      .Main-Text h2 {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid transparent;
+        animation: typing 3s ease-in-out forwards;
+      }
+      
+      font {
+        animation: typing 3s ease-in-out forwards, color-change 3s ease-in-out forwards;
+      }
+      
+      @keyframes typing {
+        0% {
+          width: 0;
+          border-right-color: transparent;
+        }
+        1% {
+          border-right-color: #fff;
+        }
+        100% {
+          width: 100%;
+          border-right-color: transparent;
+        }
+      }
+      
+      @keyframes color-change {
+        0% {
+          color: transparent;
+        }
+        100% {
+          color: #FF9100;
+        }
+      }
+      

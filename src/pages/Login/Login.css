@@ -7,7 +7,11 @@
     justify-content: center;
     height: 100vh;
     padding: 20px;
-    background-color: #222;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: black !important;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
 }
 .form {
     display: flex;
