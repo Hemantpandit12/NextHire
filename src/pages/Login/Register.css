@@ -174,4 +174,13 @@
     color :#151717; 
     margin: auto;
   }
+
+
+  @media (max-width: 420px) 
+  {
+    .container
+    {
+      transform: scale(.8);
+    }
+  }
       

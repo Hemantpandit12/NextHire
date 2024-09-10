@@ -30,11 +30,11 @@ function Login()
       </div>
       <span class="span">Forgot password?</span>
     </div>
-    <Link to="/home">
+    <Link to="/">
     <button class="button-submit">Sign In</button>
     </Link>
     <p class="p">Don't have an account? 
-            <Link to="/" className="span">
+            <Link to="/Signup" className="span">
             Sign Up
             </Link>
     </p>
