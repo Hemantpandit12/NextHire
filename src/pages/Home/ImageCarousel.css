@@ -138,3 +138,29 @@ html,body {
     }
 
   }
+  @media (max-width: 420px) 
+  {
+    .ImageText
+    {
+        text-align: center;
+        padding-right: 14rem;
+        margin-bottom: 2rem;
+        margin-top: -8rem;
+        transform: scale(.9);
+    }
+    .ImageText p 
+    {
+        font-size: 20px;
+    }
+    .ImageText h1 
+    {
+        font-size: 60px;
+    }
+    .pic
+    {
+        width: 200px;
+        height: 200px;
+        margin-left: -6rem;
+    }
+
+  }

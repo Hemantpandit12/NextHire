@@ -143,3 +143,34 @@
   .navbar:hover::before{
     transform: scaleX(1);
   }
+
+
+  @media (max-width: 1400px) 
+  {
+    .link {
+      font-size: 16px;
+    }
+    .RA {
+      font-size: 30px;
+    }
+    .navbar-logo
+    {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 420px) 
+  {
+    .link {
+      font-size: 12px;
+    }
+    .RA {
+      font-size: 20px;
+      margin-left: -5px;
+    }
+    .navbar-logo
+    {
+      margin-left: auto;
+      height: 30px;
+    }
+  }

@@ -123,5 +123,59 @@
     }
     
   }
+
+  @media (max-width: 1400px) 
+  {
+    .Next
+    {
+
+      position: relative;
+      top: 45px;
+      margin-left: 0;
+    }
+    .Footer-icon
+    {
+      margin-left: 3rem; 
+
+
+      position: relative;
+      top: 45px;
+    }
+  }
   
- 
+  @media (max-width: 420px) 
+  {
+    .Footer-nav-links
+    {
+        margin-left: 10rem;
+    }
+    .FLink
+    {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    .Next
+    {
+      font-size: 15px;
+      position: relative;
+      top: 45px;
+      margin-left: 0;
+    }
+    .Footer-icon
+    {
+      margin-left: 1rem; 
+      height: 35px;  
+
+      position: relative;
+      top: 50px;
+    }
+    .Footer-text
+    {
+      font-size: 12px;
+    }
+    .IconT
+    {
+      margin-top: 0;
+    }
+    
+  }

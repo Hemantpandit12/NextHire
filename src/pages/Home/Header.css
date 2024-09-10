@@ -45,7 +45,7 @@
 }
 .logo
 {  
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 
 .latter-container:hover
@@ -93,6 +93,37 @@
         padding-left: 3rem;
     }
   }
+
+  @media (max-width: 1400px) 
+  {
+    .logo
+    {
+        margin-left: -3rem;
+        
+    }
+    .latter-container
+    {
+        padding-left: 4rem;
+    }
+  }
+
+  @media (max-width: 420px) 
+  {
+    .logo
+    {
+        margin-left: -8rem;
+        transform: scale(.7);
+        margin-top: -3rem;
+        
+    }
+    .latter-container
+    {
+        padding-left: 1rem;
+        transform: scale(.9);
+
+    }
+  }
+
 
     
       
