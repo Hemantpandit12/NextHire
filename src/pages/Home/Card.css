@@ -76,6 +76,7 @@
     backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
     transition: transform background-color 0.3s ease-in-out;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
   }
   
   .Cimg
@@ -109,6 +110,7 @@
     margin-top: 12px;
     text-align: center;
     transition: color 0.3s ease-in;
+    color: white;
   }
   .card-text{
     transition: color 0.3s ease-in;
@@ -131,4 +133,10 @@
       width: 20rem;
     }
     
+  }
+
+  
+  .c1:active, .c2:active, .c3:active
+  {
+    transform: scale(.9);
   }

@@ -1,11 +1,11 @@
 
-.logincontainer
+.ReferralSeeker-container
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     padding: 20px;
     --color: rgba(114, 114, 114, 0.3);
     background-color: black !important;
@@ -13,7 +13,7 @@
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
     background-size: 55px 55px;
 }
-.loginform {
+.ReferralSeeker-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -23,31 +23,31 @@
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease-in-out, transform 0.4s ease-in-out;;
-    transform: scale(1);
-
+    transform: scale(.9);
+    margin-top: 3em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  .loginform:hover{
+  .ReferralSeeker-form:hover{
 
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.7), 
     0 0 50px rgba(255, 255, 255, 0.3);
-    transform: scale(1.02);
+    transform: scale(1);
   } 
   
   ::placeholder {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
-  .loginform button {
+  .ReferralSeeker-form button {
     align-self: flex-end;
   }
   
-  .flex-column > label {
+  .Seeker-flex-column > label {
     color: #151717;
     font-weight: 600;
   }
   
-  .inputForm {
+  .Seeker-inputForm {
     border: 1.5px solid #ecedec;
     border-radius: 50px;
     height: 50px;
@@ -57,23 +57,22 @@
     transition: 0.2s ease-in-out;
   }
   
-  .input {
+  .Seeker-input {
     margin-left: 10px;
-    border-radius: 10px;
     border: none;
     width: 85%;
     height: 100%;
   }
   
-  .input:focus {
+  .Seeker-input:focus {
     outline: none;
   }
   
-  .inputForm:focus-within {
+  .Seeker-inputForm:focus-within {
     border: 1.5px solid #2d79f3;
   }
   
-  .flex-row {
+  .Seeker-flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,7 +81,7 @@
     margin-top: 5px;
   }
   
-  .flex-row > div > label {
+  .Seeker-flex-row > div > label {
     font-size: 14px;
     color: black;
     font-weight: 400;
@@ -96,7 +95,7 @@
     cursor: pointer;
   }
   
-  .button-submit {
+  .Seeker-button-submit {
     margin: 20px 0 10px 0;
     background-color: #151717;
     border: none;
@@ -111,14 +110,24 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .button-submit:hover {
+  .Seeker-button-submit:hover {
     background-color: #282c2c;
     transform: scale(1.01);
-    
-    
   }
 
-  .button-submit:after {
+  .Back-button
+  {
+    color: #151717;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .Back-button:hover
+  {
+    color: #282c2c;
+    transform: scale(1.01);
+  }
+
+  .Seeker-button-submit:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,22 +140,17 @@
     opacity: 0;
   }
   
-  .button-submit:active:after {
+  .Seeker-button-submit:active:after {
     transform: scale(1);
     opacity: 1;
   }
   
-  .button-submit:active {
+  .Seeker-button-submit:active {
     transform: translateY(-3px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
   
-  .p {
-    text-align: center;
-    color: black;
-    font-size: 14px;
-    margin: 5px 0;
-  }
+
   
   .btn {
     margin-top: 10px;
@@ -173,15 +177,22 @@
     padding-left: 5px;
   }
 
-  .profile
+  .Seeker-profile
   {  
     color :#151717; 
     margin: auto;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+
+  .file
+  {
+    margin-top: 25px;;
   }
 
   @media (max-width: 420px) 
   {
-    .logincontainer
+    .ReferralSeeker-container
     {
       transform: scale(.8);
     }

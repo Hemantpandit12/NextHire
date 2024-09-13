@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(255, 255, 255, 0.1);;
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px) ;
     padding: .5rem;
     display: flex;
@@ -98,7 +98,7 @@
     .RA {
       margin: auto;
       font-size: 20px;
-      
+      color: #fff;
     }
   }
   

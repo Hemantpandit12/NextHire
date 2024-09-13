@@ -12,8 +12,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <Link to="/">
       <RiNextjsLine className="navbar-logo" size={50} />
-      <p className='RA'>NextHire</p>
+      </Link>
+      <p className='RA'><Link to="/" className='RA'>NextHire</Link></p>
       <ul className="nav-links">
         <li>
           <Link className='link'

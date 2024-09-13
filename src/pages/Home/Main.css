@@ -42,6 +42,7 @@
     cursor: pointer;
     font-weight: bold;
     margin-top: -3rem;
+    transition: transform 0.2s ease-in-out;
 }
 .Mainp{
     padding-top: 2rem;
@@ -106,3 +107,7 @@
         }
       }
       
+  .Main-btn:active
+  {
+    transform: scale(.9);
+  }
