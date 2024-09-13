@@ -15,8 +15,8 @@ const Profiles = [
     role: 'Product Manager',
     linkedin: 'https://www.linkedin.com/in/davidlee',
     github: 'https://github.com/davidlee',
-    image: "https://images.unsplash.com/photo-1725879978590-c1260763b9e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D"
-     },
+    image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTplvqhrIjQdARqXEBd1dBwsQTvsmBs4PFpIObYP2PveM9JlOTu"
+  },
   {
     name: 'Sophia Patel',
     email: 'sophiapatel@example.com',
@@ -24,7 +24,7 @@ const Profiles = [
     role: 'Graphic Designer',
     linkedin: 'https://www.linkedin.com/in/sophiapatel',
     github: 'https://github.com/sophiapatel',
-    image: "https://images.unsplash.com/photo-1712068944613-1ff36db16612?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4CyBUYcfa_9iioLW2LeBMh8jCyTtJi-pDQ&s"
   },
   {
     name: 'Jackson Brown',
