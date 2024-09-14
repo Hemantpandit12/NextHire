@@ -23,9 +23,9 @@ const Explore = () => {
           </div>
           <div className="Explore-info">
             <h3 className="Explore-name">{Explore.name}</h3>
-            <p className="Explore-price">{Explore.degree}</p>
-            <p className="Explore-price">{Explore.role}</p>
-            <p className="Explore-price">{Explore.email}</p>
+            <p className="Explore-price">Degree : {Explore.degree}</p>
+            <p className="Explore-price">Role : {Explore.role}</p>
+            <p className="Explore-price">Email : {Explore.email}</p>
           </div>
         </div>
       ))}

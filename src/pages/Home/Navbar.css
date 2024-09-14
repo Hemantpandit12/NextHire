@@ -12,7 +12,8 @@
     position: fixed;
     width: 100%;
     z-index: 1000; 
-    border: solid .5px white;
+    border-bottom: solid .5px white;
+
 
   }
   .link::before
@@ -59,9 +60,14 @@
     color: #FF9100;
   }
   .RA{
-    color: #fff;
+    
     font-size: 27px;
     margin-right: 65%;
+    background: linear-gradient(287deg, rgba(211,102,119,1) 0%, rgba(163,113,192,1) 50%, rgba(85,129,236,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    letter-spacing: 1.5px;
   }
   .RA:hover {
     color: #FF9100;
@@ -69,7 +75,6 @@
   .navbar-logo{
     color: #fff;
     margin-left: 1rem;
-
     }
   .navbar-logo:hover {
     color: #FF9100;

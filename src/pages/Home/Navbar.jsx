@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/">
-      <RiNextjsLine className="navbar-logo" size={50} />
+      <RiNextjsLine className="navbar-logo" size={45} />
       </Link>
       <p className='RA'><Link to="/" className='RA'>NextHire</Link></p>
       <ul className="nav-links">

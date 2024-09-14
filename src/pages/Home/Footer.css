@@ -35,6 +35,9 @@
     font-size: 20px;
     font-weight: 600;
     padding-top: 10px;
+    background: linear-gradient(287deg, rgba(211,102,119,1) 0%, rgba(163,113,192,1) 50%, rgba(85,129,236,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
   }
   .IconT
@@ -78,6 +81,10 @@
   
   .Footer-Link li:hover {
     transform: scale(1.05);
+  }
+  .Footer-text
+  {
+    color: #ffffffb0;
   }
 
   @media (max-width: 480px) 
