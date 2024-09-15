@@ -1,60 +1,64 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
-import { RiNextjsLine } from "react-icons/ri";
+import menu from './menu.svg';
+import close from './close.svg';
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('/');
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+  }
 
-  const handleClick = (link) => {
-    setActiveLink(link);
-  };
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+  }
 
   return (
-    <nav className="navbar">
-      <Link to="/">
-      <RiNextjsLine className="navbar-logo" size={45} />
-      </Link>
-      <p className='RA'><Link to="/" className='RA'>NextHire</Link></p>
-      <ul className="nav-links">
-        <li>
-          <Link className='link'
-            to="/" 
-            style={activeLink === '/' ? { color: '#FF9100' } : { color: '#fff' }} 
-            onClick={() => handleClick('/')}
-          >
-            Home
-          </Link>
+    <React.Fragment>
+      <nav className="navbar">
+        
+        <p className='RA'><NavLink to="/" className='RA'>NextHire</NavLink></p>
+        <ul className="nav-links">
+          <li className='hideOnMobile'>
+            <NavLink className='link' to="/">Home</NavLink>
+          </li>
+          <li className='hideOnMobile'>
+            <NavLink className='link' to="/about">About</NavLink>
+          </li>
+          <li className='hideOnMobile'>
+            <NavLink className='link' to="/ContactUs">Contact</NavLink>
+          </li>
+          <li className='hideOnMobile'>
+            <NavLink className='link' to="/Login">Login</NavLink>
+          </li>
+          <li className='menu-button'>
+            <img src={menu} alt="menu" className='link show' onClick={() => showSidebar()} />
+          </li>
+        </ul>
+      </nav>
+      <ul className="sidebar">
+        <li onClick={() => hideSidebar()}>
+          <img src={close} alt="menu" className='link close' />
         </li>
         <li>
-          <Link className='link'
-            to="/about" 
-            style={activeLink === '/about' ? { color: '#FF9100' } : { color: '#fff' }} 
-            onClick={() => handleClick('/about')}
-          >
-            About
-          </Link>
+          <NavLink className='link' to="/">Home</NavLink>
         </li>
         <li>
-          <Link className='link'
-            to="/ContactUs" 
-            style={activeLink === '/ContactUs' ? { color: '#FF9100' } : { color: '#fff' }} 
-            onClick={() => handleClick('/ContactUs')}
-          >
-            Contact
-          </Link>
+          <NavLink className='link' to="/about">About</NavLink>
         </li>
         <li>
-          <Link className='link'
-            to="/Login" 
-            style={activeLink === '/Login' ? { color: '#FF9100' } : { color: '#fff' }} 
-            onClick={() => handleClick('/Login')}
-          >
-            Login
-          </Link>
+          <NavLink className='link' to="/ContactUs">Contact</NavLink>
+        </li>
+        <li>
+          <NavLink className='link' to="/Explore">Explore</NavLink>
+        </li>
+        <li>
+          <NavLink className='link' to="/Login">Login</NavLink>
         </li>
       </ul>
-    </nav>
+    </React.Fragment>
   );
 };
 

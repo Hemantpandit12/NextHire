@@ -71,6 +71,16 @@
         margin-bottom: -2rem;
         transform: scale(.8);
     }
+    .Main-btn
+    {
+      margin-left: 20rem;
+      transform: scale(.8);
+      margin-bottom: 2rem;
+    }
+    .Main-Text h2
+    {
+      transform: scale(.6);
+    }
     
   }
     /*Typing Effect*/

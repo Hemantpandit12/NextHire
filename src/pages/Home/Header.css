@@ -108,14 +108,22 @@
     {
         margin-left: -8rem;
         transform: scale(.7);
-        margin-top: -3rem;
+        margin-top: -7rem;
+        margin-bottom: -5rem;
         
     }
     .latter-container
     {
-        padding-left: 1rem;
-        transform: scale(.9);
-
+        padding-left: 0;
+        transform: scale(.7);
+        padding-top: 0;
+    }
+    .latter
+    {
+        margin-left: -1rem;
+    }
+    .latter-container .l2{
+        font-size: 80px !important;
     }
   }
 

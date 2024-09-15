@@ -1,7 +1,7 @@
 .navbar {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px) ;
-    padding: .5rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +11,7 @@
     left: 0;
     position: fixed;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1001; 
     border-bottom: solid .5px white;
 
 
@@ -55,14 +55,12 @@
   .link:hover {
     color: #FF9100;
   }
-  
-  .link:active {
-    color: #FF9100;
+  .active{
+    color: #FF9100; 
   }
-  .RA{
-    
+  .RA{ 
     font-size: 27px;
-    margin-right: 65%;
+    margin-right: 62%;
     background: linear-gradient(287deg, rgba(211,102,119,1) 0%, rgba(163,113,192,1) 50%, rgba(85,129,236,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -80,6 +78,59 @@
     color: #FF9100;
     
   }
+  .menu-button
+  {
+    display: none;
+  }
+  .sidebar
+  {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1002;
+   
+  }
+  .sidebar .show
+  {
+    display: flex;
+  }
+  .sidebar .show:hover
+  {
+    color: #FF9100;
+  }
+  .sidebar li 
+  {
+    width: 100%;
+  }
+  .sidebar a {
+    color: #ffff;
+    width: 100%;
+  }
+  .sidebar .close{
+    padding: .7rem;
+  }
+  
+  .sidebar .close:hover {
+    background-color: #ffffff41;
+    border-radius: 10px;
+    padding: .5rem;
+  }
+  .sidebar .active
+  {
+    color : #FF9100;
+  } 
 
   @media (max-width: 768px) {
     .navbar {
@@ -95,30 +146,37 @@
       margin: auto;
       
     }
-    .link {
-      margin-left: -20%;
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
+   
     .RA {
       margin: auto;
       font-size: 20px;
       color: #fff;
     }
+    .hideOnMobile
+    {
+      display: none;
+    }
+    .menu-button
+    {
+      display: block;
+      cursor: pointer;
+    }
   }
   
   @media (max-width: 480px) {
-    .navbar {
-      padding: 0.5rem;
+    .sidebar{
+      width: 50%;
     }
-    .link {
-      font-size: 16px;
-      margin: auto;
+    .show{
+      margin-left: 12rem;
     }
-    .RA {
-      font-size: 30px;
-      margin: auto;
-
+    .navbar-logo
+    {
+      display: none !important;
+    }
+    .navbar
+    {
+      padding: .5rem;
     }
   }
 
@@ -170,12 +228,14 @@
       font-size: 12px;
     }
     .RA {
-      font-size: 20px;
-      margin-left: -5px;
+      font-size: 25px;
+      margin-left: 5px;
     }
     .navbar-logo
     {
-      margin-left: auto;
-      height: 30px;
+     display: none;
+    }
+    .show{
+      margin-left: 10rem;
     }
   }
