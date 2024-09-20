@@ -37,6 +37,7 @@ function Register()
       </div>
     
     <button class="button-submit">Register</button>
+    
     <p class="p">Already have an account?
            <Link to="/Login" className="span">
            Login

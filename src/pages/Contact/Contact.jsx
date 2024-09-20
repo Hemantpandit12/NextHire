@@ -22,7 +22,6 @@ const ContactUs = () => {
             <h2>Phone :  (123) 456-7890</h2>
             <h2>Address : 123 Tata Strive, Anand</h2>
             <div className="contact-icon">
-              
               <FaGithubSquare className='icon' size={50} /> <FaFacebookSquare className='icon' size={50} /> <FaInstagramSquare className='icon' size={50} /> <FaSquareXTwitter className='icon' size={50} />
             </div>
           </div>
