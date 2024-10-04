@@ -19,10 +19,10 @@ const Navbar = () => {
     <React.Fragment>
       <nav className="navbar">
         
-        <p className='RA'><NavLink to="/" className='RA'>NextHire</NavLink></p>
+        <p className='RA'><NavLink to="/home" className='RA'>NextHire</NavLink></p>
         <ul className="nav-links">
           <li className='hideOnMobile'>
-            <NavLink className='link' to="/">Home</NavLink>
+            <NavLink className='link' to="/home">Home</NavLink>
           </li>
           <li className='hideOnMobile'>
             <NavLink className='link' to="/about">About</NavLink>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <img src={close} alt="menu" className='link close' />
         </li>
         <li>
-          <NavLink className='link' to="/">Home</NavLink>
+          <NavLink className='link' to="/home">Home</NavLink>
         </li>
         <li>
           <NavLink className='link' to="/about">About</NavLink>

@@ -1,0 +1,242 @@
+.AdminNavbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px) ;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+    font-weight: bolder;
+    top: 5rem;
+    left: 0;
+    border-radius: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1001; 
+    border-bottom: solid .5px white;
+
+
+  }
+  .link::before
+  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transition: all 0.5s ease;
+    bottom: -5px;
+    left: 0;
+    box-shadow:0 0 20px rgba(255, 255, 255, 0.8), 
+    0 0 50px rgba(255, 255, 255, 0.3);
+  }
+  .link:hover::before{
+    transform: scaleX(1);
+  }
+  .nav-links 
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .link {
+    color: #FFFF;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .link:hover {
+    color: #FF9100;
+  }
+  .active{
+    color: #FF9100; 
+  }
+  .RA{ 
+    font-size: 27px;
+    margin-right: 62%;
+    background: linear-gradient(287deg, rgba(211,102,119,1) 0%, rgba(163,113,192,1) 50%, rgba(85,129,236,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+  }
+  .RA:hover {
+    color: #FF9100;
+  }
+  .navbar-logo{
+    color: #fff;
+    margin-left: 1rem;
+    }
+  .navbar-logo:hover {
+    color: #FF9100;
+    
+  }
+  .menu-button
+  {
+    display: none;
+  }
+  .sidebar
+  {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1002;
+   
+  }
+  .sidebar .show
+  {
+    display: flex;
+  }
+  .sidebar .show:hover
+  {
+    color: #FF9100;
+  }
+  .sidebar li 
+  {
+    width: 100%;
+  }
+  .sidebar a {
+    color: #ffff;
+    width: 100%;
+  }
+  .sidebar .close{
+    padding: .7rem;
+  }
+  
+  .sidebar .close:hover {
+    background-color: #ffffff41;
+    border-radius: 10px;
+    padding: .5rem;
+  }
+  .sidebar .active
+  {
+    color : #FF9100;
+  } 
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      align-items: flex-start;
+      overflow-y: hidden;
+    }
+    .nav-links {
+      font-size: small;
+      flex-direction: row;
+      padding: 0.5rem;
+      gap: 10px;
+      margin: auto;
+      
+    }
+   
+    .RA {
+      margin: auto;
+      font-size: 20px;
+      color: #fff;
+    }
+    .hideOnMobile
+    {
+      display: none;
+    }
+    .menu-button
+    {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar{
+      width: 50%;
+    }
+    .show{
+      margin-left: 12rem;
+    }
+    .navbar-logo
+    {
+      display: none !important;
+    }
+    .navbar
+    {
+      padding: .5rem;
+    }
+  }
+
+  .navbar li {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navbar li:hover {
+    transform: scale(1.05);
+  }
+  
+  .navbar::before
+  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transition: all 0.5s ease;
+    bottom: 0;
+    left: 0;
+    box-shadow:0 0 20px rgba(255, 255, 255, 0.8), 
+    0 0 50px rgba(255, 255, 255, 0.3);
+  }
+  .navbar:hover::before{
+    transform: scaleX(1);
+  }
+
+
+  @media (max-width: 1400px) 
+  {
+    .link {
+      font-size: 16px;
+    }
+    .RA {
+      font-size: 30px;
+    }
+    .navbar-logo
+    {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 420px) 
+  {
+    .link {
+      font-size: 12px;
+    }
+    .RA {
+      font-size: 25px;
+      margin-left: 5px;
+    }
+    .navbar-logo
+    {
+     display: none;
+    }
+    .show{
+      margin-left: 10rem;
+    }
+  }

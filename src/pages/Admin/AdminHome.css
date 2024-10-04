@@ -1,0 +1,14 @@
+.AdminHomeContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    background-color: #f7f7f7;
+}
+
+.AdminHomeContainer h1 
+{
+    color: #41292C;
+}

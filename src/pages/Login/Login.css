@@ -188,4 +188,22 @@
   }
 
 
-      
+  .success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+
+
+.button-submit:disabled 
+{
+  /* Styles for disabled button */
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}

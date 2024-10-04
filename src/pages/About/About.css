@@ -53,6 +53,18 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .about-info-1
+  {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-top: 1rem;
+  }
+  .about-info-2
+  {
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 1rem;
+  }
 
 .about-h1-container
   {
@@ -139,7 +151,7 @@
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.3);
 }
 
 .feature-image {
@@ -170,7 +182,7 @@
 
 .testimonial-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.3);
 }
 
 .testimonial-image {

@@ -9,13 +9,18 @@ import Register from './pages/Login/Register';
 import ReferralSeeker from './pages/ReferForms/ReferralSeeker';
 import ReferralProvider from './pages/ReferForms/ReferralProvider';
 import Explore from './pages/Home/Explore';
+import AdminHome from './pages/Admin/AdminHome';
+import LoginProfiles from './pages/Admin/LoginProfiles';
+import SeekerProfiles from './pages/Admin/SeekerProfiles';
+import ProviderProfiles from './pages/Admin/ProviderProfiles';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* User Routes */}
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
@@ -23,6 +28,11 @@ const App = () => {
         <Route path="/Seeker" element={<ReferralSeeker />} />
         <Route path="/Provider" element={<ReferralProvider />} />
         <Route path="/Explore" element={<Explore />} />
+        {/* Admin Routes */}
+        <Route path="/AdminHome" element={<AdminHome />} />
+        <Route path="/LoginProfiles" element={<LoginProfiles />} />
+        <Route path="/SeekerProfiles" element={<SeekerProfiles />} />
+        <Route path="/ProviderProfiles" element={<ProviderProfiles />} />
 
       </Routes>
     </BrowserRouter>
